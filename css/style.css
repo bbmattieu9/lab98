@@ -7,19 +7,25 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato";
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 20px;
+   padding: 2rem;
+   box-sizing: border-box;
 }
 
 .header {
@@ -33,19 +39,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -60,18 +66,17 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 90px;
+  font-size: 9rem;
   font-weight: 900;
-  letter-spacing: 35px;
-  /* font-family: 'Tilt Prism'; */
+  letter-spacing: 3.5rem;
   font-family: "Tektur", cursive;
   color: #28b485;
-  margin-top: 40px;
-
+  margin-top: 4rem;
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -79,31 +84,24 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: 20px;
+  letter-spacing: 2rem;
   font-family: "Tektur", cursive;
-  color: #ffd1dca6;
-  color: #28b485;
   color: #fff;
   text-transform: lowercase;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   animation: moveInRight 2s ease-out;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
-  /* 
-    60% {
-        transform: rotate(180deg);
-    } */
-
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -115,11 +113,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -131,7 +129,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -145,11 +143,12 @@ body {
 .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -175,7 +174,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
