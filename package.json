@@ -1,0 +1,14 @@
+{
+  "name": "lab98",
+  "version": "1.0.0",
+  "description": "landing page for lab98 tech lab",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Babatunde Mattieu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
